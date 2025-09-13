@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Leica M3 Camera",
+    "description": "A legendary 35mm film camera introduced in 1954, known for its precision, build quality, and association with classic photojournalism. Highly sought after by collectors and photography enthusiasts.",
+    "currentBidPrice": "2850",
+    "timeLeft": "2 Days left",
+    "bidsCount": "18",
+    "image": "https://i.ibb.co/CszJ3GQL/image.png"
+  },
+  {
+    "id": 2,
+    "title": "1965 Gibson SG Standard Electric Guitar",
+    "description": "An iconic electric guitar used by legends like Angus Young and Eric Clapton. Known for its double cutaway design and powerful humbucker pickups, this vintage piece is a prized item for collectors and musicians alike.",
+    "currentBidPrice": "6700",
+    "timeLeft": "3 Days left",
+    "bidsCount": "24",
+    "image": "https://i.ibb.co/FdSLwv5/image-1.png"
+  },
+  {
+    "id": 3,
+    "title": "Original Apple Macintosh 128K (1984)",
+    "description": "Apple’s first mass-market personal computer with a graphical user interface and mouse. A historical milestone in tech history and a collector's favorite for vintage computing fans.",
+    "currentBidPrice": "4200",
+    "timeLeft": "1 Days left",
+    "bidsCount": "31",
+    "image": "https://i.ibb.co/QLnpRtT/image-2.png"
+  },
+  {
+    "id": 4,
+    "title": "Rolex Submariner 16610",
+    "description": "A classic luxury dive watch introduced in the late 1980s, known for its durability, precision, and iconic design. This Rolex model is a staple in watch collections and retains strong resale value.",
+    "currentBidPrice": "8900",
+    "timeLeft": "12 hours left",
+    "bidsCount": "40",
+    "image": "https://i.ibb.co/F4HCqWsK/image-3.png"
+  },
+  {
+    "id": 5,
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "description": "A rare and valuable first edition of one of the most influential novels in American literature. Coveted by literary collectors and often auctioned at prestigious events.",
+    "currentBidPrice": "12500",
+    "timeLeft": "5 Days left",
+    "bidsCount": "14",
+    "image": "https://i.ibb.co/mFNg1yqk/image-4.png"
+  },
+  {
+    "id": 6,
+    "title": "Mid-Century Modern Eames Lounge Chair",
+    "description": "An original Eames Lounge Chair and Ottoman, designed by Charles and Ray Eames. A masterpiece of 20th-century furniture design, blending luxury with ergonomic comfort.",
+    "currentBidPrice": "3800",
+    "timeLeft": "8 hours left",
+    "bidsCount": "27",
+    "image": "https://i.ibb.co/HD9yh5Gs/image-5.png"
+  },
+  {
+    "id": 7,
+    "title": "Banksy Original Screen Print",
+    "description": "A limited edition original screen print by the anonymous street artist Banksy. His works are renowned for political commentary, satirical art, and rapidly increasing market value.",
+    "currentBidPrice": "24500",
+    "timeLeft": "4 Days left",
+    "bidsCount": "36",
+    "image": "https://i.ibb.co/sp1JB9Tk/image-6.png"
+  }
+]
