@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Bid from './Bid';
 
-const Bids = ({handleBookmark}) => {
+const Bids = ({handleBookmark,}) => {
     const [bids, setBids] = useState([]);
 
     useEffect(() => {
@@ -21,7 +21,11 @@ const Bids = ({handleBookmark}) => {
         </ul>
         <div>
           {bids.map((bid) => (
-            <Bid key={bid.id} bid={bid} handleBookmark={handleBookmark}></Bid>
+            <Bid
+              key={bid.id}
+              bid={bid}
+              handleBookmark={handleBookmark}
+            ></Bid>
           ))}
         </div>
       </div>
