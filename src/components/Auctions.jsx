@@ -18,7 +18,7 @@ const Auctions = () => {
     return (
       <div className="flex gap-8">
         <div className="overflow-x-auto w-[70%] ">
-          <Bids handleBookmark={handleBookmark} />
+          <Bids handleBookmark={handleBookmark} bookmark={bookmark} />
         </div>
 
         <div className="w-[30%] p-5 border border-gray-400 rounded-2xl">
@@ -59,7 +59,7 @@ const Auctions = () => {
           
           <div className="flex justify-between pt-5 border-t-1">
             <h3>Total bids Amount:</h3>
-            <p>${amount}</p>
+            <p>${String(amount).padStart(4, "0")}</p>
           </div>
 
         </div>
