@@ -25,21 +25,19 @@ const Auctions = () => {
           <h1 className="text-2xl font-bold mb-5 pb-4 border-b-1">
             Favorite Items
           </h1>
-          <div className="pb-8">
-            <p className="text-xl pb-3">No favorites yet</p>
-            <p className="text-sm">
-              Click the heart icon on any item to add it to your favorites
-            </p>
-          </div>
-          <div className="flex justify-between pt-5 border-t-1">
-            <h3>Total bids Amount:</h3>
-            <p>${amount}</p>
-          </div>
 
-          {bookmark.map((bid) => (
+          {bookmark.length === 0 ? (
+            <div className="pb-8">
+              <p className="text-xl pb-3">No favorites yet</p>
+              <p className="text-sm">
+                Click the heart icon on any item to add it to your favorites
+              </p>
+            </div>
+          ) : (
+          bookmark.map((bid) => (
             <div
               key={bid.id}
-              className="flex justify-between items-center pt-6 gap-5"
+              className="flex justify-between items-center pb-4 gap-5"
             >
               <img className="w-[50px] h-[50px]" src={bid.image} alt="" />
               <div className="flex flex-col flex-start">
@@ -56,7 +54,14 @@ const Auctions = () => {
                 x
               </button>
             </div>
-          ))}
+          ))
+          )}
+          
+          <div className="flex justify-between pt-5 border-t-1">
+            <h3>Total bids Amount:</h3>
+            <p>${amount}</p>
+          </div>
+
         </div>
       </div>
     );
