@@ -8,12 +8,17 @@ const Auctions = () => {
    const handleBookmark = (bid) => {
      setBookmark([...bookmark, bid]);
      setAmount(Number(amount) + Number(bid.currentBidPrice));
+   };
+
+  const handleRemoveFromBookmark = (bid) => {
+    setBookmark(bookmark.filter((item) => item.id !== bid.id));
+    setAmount(Number(amount) - Number(bid.currentBidPrice));
   };
   
     return (
       <div className="flex gap-8">
         <div className="overflow-x-auto w-[70%] ">
-          <Bids handleBookmark={handleBookmark}/>
+          <Bids handleBookmark={handleBookmark} />
         </div>
 
         <div className="w-[30%] p-5 border border-gray-400 rounded-2xl">
@@ -31,22 +36,27 @@ const Auctions = () => {
             <p>${amount}</p>
           </div>
 
-          
           {bookmark.map((bid) => (
-            <div key={bid.id} className="flex justify-between items-center pt-6 gap-5">
+            <div
+              key={bid.id}
+              className="flex justify-between items-center pt-6 gap-5"
+            >
               <img className="w-[50px] h-[50px]" src={bid.image} alt="" />
               <div className="flex flex-col flex-start">
-                <h3 className='text-gray-400'>{bid.title}</h3>
+                <h3 className="text-gray-400">{bid.title}</h3>
                 <div className="flex justify-between text-sm text-gray-300">
                   <span>${bid.currentBidPrice}</span>
                   <span>{bid.bidsCount}</span>
                 </div>
               </div>
-              <button className=' p-4 cursor-pointer'>x</button>
+              <button
+                onClick={() => handleRemoveFromBookmark(bid)}
+                className=" p-4 cursor-pointer"
+              >
+                x
+              </button>
             </div>
           ))}
-
-
         </div>
       </div>
     );
